@@ -1,0 +1,26 @@
+The GEM libraries have bee completly finished, and here are the details.
+
+The GEM libraries for Mark Johnson's 'C' Compiler have been split into two
+libraries now known as AES.A & VDI.A.  The AES.A library of course contains
+AES routines, but also contains the startup code for a gem program.  You will
+have to use this library when assembling unless you rewrite the startup code.
+The VDI.A library contains all of the VDI stuff needed.  The PRG.S file was also
+updated to accomadate the rest of the library routines.  The last file is 
+MKP.BAT file was changed so that the two libraries will assemble with the 
+program file. The reason the files were not put together is the fact that the 
+compiler is only a beta version and still has a few bugs to work out.  
+Therefore, the compiler can handle these files seperatly but not when put 
+together.  Also note, that these libraries are not extensively tested.  When I
+can get a hold of the assembler opcodes I then can test them to make sure the 
+work correctly.  Isn't public domain programs great.  If Mark Johnson will 
+agree, I will keep GEnie updated with GEM libraries for his compiler.  I guess 
+kind of a technical advisor for the 'C' compiler for the GEM side.  I feel, I 
+am experienced enough to deal with any problems should they arise with the 'C' 
+compiler.  If anyone would like to see my credentials, then just write me a 
+letter, using GE mail.
+
+			Sincerly,
+
+			Kenneth L. Hurley
+			(KLHURLEY)
+

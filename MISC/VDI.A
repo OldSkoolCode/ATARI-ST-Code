@@ -1,0 +1,1855 @@
+: v_opnwk
+csv
+ldw 1 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 11 0
+sgw 0 ct3
+lll 12 0
+tda 0 0
+low 0 0 0
+sgw 0 ct6
+lag ii0 0
+tad 0 0
+sll 0 -8
+ldw 0 0
+slw 0 -2
+* 0
+llw -2 0
+ldw 11 1
+cmw 0 1
+brc 9 1
+jmp 2
+* 3
+llw -2 0
+ilw 1 -2
+jmp 0
+* 2
+lll 8 0
+tda 0 0
+llw -2 0
+adw 2 0
+lxw 0 0 0
+lll -8 1
+tda 1 0
+llw -2 1
+adw 2 1
+sxw 0 1 0
+jmp 3
+* 1
+jsr vdi
+lag io0 0
+tad 0 0
+sll 0 -12
+ldw 0 0
+slw 0 -2
+* 4
+llw -2 0
+ldw 45 1
+cmw 0 1
+brc 9 5
+jmp 6
+* 7
+llw -2 0
+ilw 1 -2
+jmp 4
+* 6
+lll -12 0
+tda 0 0
+llw -2 0
+adw 2 0
+lxw 0 0 0
+lll 16 1
+tda 1 0
+llw -2 1
+adw 2 1
+sxw 0 1 0
+jmp 7
+* 5
+lag po0 0
+tad 0 0
+sll 0 -16
+ldw 0 0
+slw 0 -4
+* 8
+llw -4 0
+ldw 12 1
+cmw 0 1
+brc 9 9
+jmp 10
+* 11
+llw -4 0
+ilw 1 -4
+jmp 8
+* 10
+lll -16 0
+tda 0 0
+llw -4 0
+adw 2 0
+lxw 0 0 0
+lll 16 1
+tda 1 0
+llw -2 1
+ilw 1 -2
+adw 2 1
+sxw 0 1 0
+jmp 11
+* 9
+lgw ct6 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+ret
+efn 16
+: v_opnvwk
+csv
+ldw 100 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 11 0
+sgw 0 ct3
+lll 12 0
+tda 0 0
+low 0 0 0
+sgw 0 ct6
+lag ii0 0
+tad 0 0
+sll 0 -8
+ldw 0 0
+slw 0 -2
+* 0
+llw -2 0
+ldw 11 1
+cmw 0 1
+brc 9 1
+jmp 2
+* 3
+llw -2 0
+ilw 1 -2
+jmp 0
+* 2
+lll 8 0
+tda 0 0
+llw -2 0
+adw 2 0
+lxw 0 0 0
+lll -8 1
+tda 1 0
+llw -2 1
+adw 2 1
+sxw 0 1 0
+jmp 3
+* 1
+jsr vdi
+lag io0 0
+tad 0 0
+sll 0 -12
+ldw 0 0
+slw 0 -2
+* 4
+llw -2 0
+ldw 45 1
+cmw 0 1
+brc 9 5
+jmp 6
+* 7
+llw -2 0
+ilw 1 -2
+jmp 4
+* 6
+lll -12 0
+tda 0 0
+llw -2 0
+adw 2 0
+lxw 0 0 0
+lll 16 1
+tda 1 0
+llw -2 1
+adw 2 1
+sxw 0 1 0
+jmp 7
+* 5
+lag po0 0
+tad 0 0
+sll 0 -16
+ldw 0 0
+slw 0 -4
+* 8
+llw -4 0
+ldw 12 1
+cmw 0 1
+brc 9 9
+jmp 10
+* 11
+llw -4 0
+ilw 1 -4
+jmp 8
+* 10
+lll -16 0
+tda 0 0
+llw -4 0
+adw 2 0
+lxw 0 0 0
+lll 16 1
+tda 1 0
+llw -2 1
+ilw 1 -2
+adw 2 1
+sxw 0 1 0
+jmp 11
+* 9
+lgw ct6 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+ret
+efn 16
+: vq_extnd
+csv
+ldw 102 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+lag io0 0
+tad 0 0
+sll 0 -8
+ldw 0 0
+slw 0 -2
+* 0
+llw -2 0
+ldw 45 1
+cmw 0 1
+brc 9 1
+jmp 2
+* 3
+llw -2 0
+ilw 1 -2
+jmp 0
+* 2
+lll -8 0
+tda 0 0
+llw -2 0
+adw 2 0
+lxw 0 0 0
+lll 12 1
+tda 1 0
+llw -2 1
+adw 2 1
+sxw 0 1 0
+jmp 3
+* 1
+lag po0 0
+tad 0 0
+sll 0 -12
+ldw 0 0
+slw 0 -4
+* 4
+llw -4 0
+ldw 12 1
+cmw 0 1
+brc 9 5
+jmp 6
+* 7
+llw -4 0
+ilw 1 -4
+jmp 4
+* 6
+lll -12 0
+tda 0 0
+llw -4 0
+adw 2 0
+lxw 0 0 0
+lll 12 1
+tda 1 0
+llw -2 1
+ilw 1 -2
+adw 2 1
+sxw 0 1 0
+jmp 7
+* 5
+ret
+efn 12
+: v_clswk
+csv
+ldw 2 0
+sgw 0 ct0
+llw 8 0
+sgw 0 ct6
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+jsr vdi
+ret
+efn 0
+: v_clsvwk
+csv
+ldw 101 0
+sgw 0 ct0
+llw 8 0
+sgw 0 ct6
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+jsr vdi
+ret
+efn 0
+: v_clrwk
+csv
+ldw 3 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+jsr vdi
+ret
+efn 0
+: v_updwk
+csv
+ldw 4 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+jsr vdi
+ret
+efn 0
+: vst_load_fonts
+csv
+ldw 119 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+lgw io0 0
+ret
+ret
+efn 0
+: vst_unload_fonts
+csv
+ldw 120 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 io0
+jsr vdi
+ret
+efn 0
+: v_pline
+csv
+ldw 6 0
+sgw 0 ct0
+llw 10 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 12 0
+sgl 0 vdi2
+jsr vdi
+lag po0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_gtext
+csv
+ldw 8 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+lag ii0 0
+tad 0 0
+sll 0 -6
+ldw 0 0
+slw 0 -2
+* 0
+lll 14 0
+tda 0 0
+llw -2 0
+xtw 0
+lxb 0 0 0
+tsb 0
+brc 4 1
+jmp 2
+* 3
+llw -2 0
+ilw 1 -2
+jmp 0
+* 2
+lll 14 0
+tda 0 0
+llw -2 0
+xtw 0
+lxb 0 0 0
+lll -6 1
+tda 1 0
+llw -2 1
+adw 2 1
+xtb 0
+sxw 0 1 0
+jmp 3
+* 1
+llw -2 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi0
+jsr vdi
+ret
+efn 6
+: vs_clip
+csv
+ldw 129 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+lll 12 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_pmarker
+csv
+ldw 7 0
+sgw 0 ct0
+llw 10 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 12 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_fillarea
+csv
+ldw 9 0
+sgw 0 ct0
+llw 10 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 12 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_cellarray
+csv
+ldw 10 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+llw 18 0
+llw 16 1
+obw 14 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 14 0
+sgw 0 ct7
+llw 16 0
+sgw 0 ct8
+llw 18 0
+sgw 0 ct9
+llw 20 0
+sgw 0 ct10
+lll 22 0
+sgl 0 vdi1
+lll 10 0
+sgl 0 vdi2
+jsr vdi
+lag ii0 0
+tad 0 0
+sgl 0 vdi1
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_contourfill
+csv
+ldw 103 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 14 0
+sgw 0 ii0
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+jsr vdi
+ret
+efn 0
+: vr_recfl
+csv
+ldw 114 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_bar
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+ldw 1 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_arc
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 4 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+ldw 2 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+llw 16 0
+sgw 0 ii0
+llw 18 0
+sgw 0 ii1
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 14 0
+sgw 0 pi6
+ldw 0 0
+sgw 0 pi7
+sgw 0 pi5
+sgw 0 pi4
+sgw 0 pi3
+sgw 0 pi2
+jsr vdi
+ret
+efn 6
+: v_pieslice
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 4 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+ldw 3 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+llw 16 0
+sgw 0 ii0
+llw 18 0
+sgw 0 ii1
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 14 0
+sgw 0 pi6
+ldw 0 0
+sgw 0 pi7
+sgw 0 pi5
+sgw 0 pi4
+sgw 0 pi3
+sgw 0 pi2
+jsr vdi
+ret
+efn 2
+: v_circle
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 3 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+ldw 4 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 14 0
+sgw 0 pi4
+ldw 0 0
+sgw 0 pi5
+sgw 0 pi3
+sgw 0 pi2
+jsr vdi
+ret
+efn 2
+: v_ellarc
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+ldw 6 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+llw 18 0
+sgw 0 ii0
+llw 20 0
+sgw 0 ii1
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 14 0
+sgw 0 pi2
+llw 16 0
+sgw 0 pi3
+jsr vdi
+ret
+efn 2
+: v_ellpie
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+ldw 7 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+llw 18 0
+sgw 0 ii0
+llw 20 0
+sgw 0 ii1
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 14 0
+sgw 0 pi2
+llw 16 0
+sgw 0 pi3
+jsr vdi
+ret
+efn 2
+: v_ellipse
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+ldw 5 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 14 0
+sgw 0 pi2
+llw 16 0
+sgw 0 pi3
+jsr vdi
+ret
+efn 0
+: v_rbox
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+ldw 8 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_rfbox
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+ldw 9 0
+sgw 0 ct5
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: v_justified
+csv
+ldw 11 0
+sgw 0 ct0
+ldw 2 0
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+llw 20 0
+sgw 0 ii0
+llw 22 0
+sgw 0 ii1
+lag ii2 0
+tad 0 0
+sll 0 -4
+ldw 2 0
+sgw 0 ct3
+* 0
+lll 14 0
+ill 1 14
+tda 0 0
+lob 0 0 0
+lll -4 1
+ill 2 -4
+tda 1 0
+xtb 0
+sow 0 0 0
+tsw 0
+brc 4 1
+jmp 2
+* 3
+lgw ct3 0
+igw 1 ct3
+jmp 0
+* 2
+jmp 3
+* 1
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+llw 18 0
+sgw 0 pi2
+jsr vdi
+ret
+efn 4
+: vswr_mode
+csv
+llw 10 0
+phw 0
+ldw 32 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vs_color
+csv
+ldw 14 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 4 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+lll 12 0
+tda 0 0
+ldw 0 0
+adw 2 0
+lxw 0 0 0
+sgw 0 ii1
+lll 12 0
+tda 0 0
+ldw 1 0
+adw 2 0
+lxw 0 0 0
+sgw 0 ii2
+lll 12 0
+tda 0 0
+ldw 2 0
+adw 2 0
+lxw 0 0 0
+sgw 0 ii3
+jsr vdi
+ret
+efn 0
+: vsl_color
+csv
+llw 10 0
+phw 0
+ldw 17 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsl_type
+csv
+llw 10 0
+phw 0
+ldw 15 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsm_type
+csv
+llw 10 0
+phw 0
+ldw 18 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsm_height
+csv
+ldw 19 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+ldw 0 0
+sgw 0 pi0
+llw 10 0
+sgw 0 pi1
+jsr vdi
+lgw po1 0
+ret
+ret
+efn 0
+: vsl_udsty
+csv
+llw 10 0
+phw 0
+ldw 113 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsl_width
+csv
+ldw 16 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+ldw 0 0
+sgw 0 pi1
+jsr vdi
+lgw po0 0
+ret
+ret
+efn 0
+: vsl_ends
+csv
+ldw 108 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct2
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+llw 12 0
+sgw 0 ii1
+jsr vdi
+ret
+efn 0
+: vsm_color
+csv
+llw 10 0
+phw 0
+ldw 20 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vst_height
+csv
+ldw 12 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+ldw 0 0
+sgw 0 pi0
+llw 10 0
+sgw 0 pi1
+jsr vdi
+lgw po0 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+lgw po1 0
+lll 16 1
+tda 1 0
+sow 0 0 0
+lgw po2 0
+lll 20 1
+tda 1 0
+sow 0 0 0
+lgw po3 0
+lll 24 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vst_point
+csv
+ldw 107 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+lgw po0 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+lgw po1 0
+lll 16 1
+tda 1 0
+sow 0 0 0
+lgw po2 0
+lll 20 1
+tda 1 0
+sow 0 0 0
+lgw po3 0
+lll 24 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vst_rotation
+csv
+llw 10 0
+phw 0
+ldw 13 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vst_font
+csv
+llw 10 0
+phw 0
+ldw 21 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vst_color
+csv
+llw 10 0
+phw 0
+ldw 22 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vst_effects
+csv
+llw 10 0
+phw 0
+ldw 106 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vst_alignment
+csv
+ldw 39 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+llw 12 0
+sgw 0 ii0
+jsr vdi
+lgw io0 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+lgw io1 0
+lll 18 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vsf_interior
+csv
+llw 10 0
+phw 0
+ldw 23 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsf_style
+csv
+llw 10 0
+phw 0
+ldw 24 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsf_color
+csv
+llw 10 0
+phw 0
+ldw 25 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsf_perimeter
+csv
+llw 10 0
+phw 0
+ldw 105 0
+phw 0
+llw 8 0
+phw 0
+jsr vset
+pop 6
+ret
+ret
+efn 0
+: vsf_updat
+csv
+ldw 112 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+llw 14 0
+ldw 16 1
+obw 14 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi1
+jsr vdi
+lag ii0 0
+tad 0 0
+sgl 0 vdi1
+ret
+efn 0
+: vset
+csv
+llw 10 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 12 0
+sgw 0 ii0
+jsr vdi
+lgw io0 0
+ret
+ret
+efn 0
+: vro_cpyfm
+csv
+ldw 109 0
+sgw 0 ct0
+ldw 4 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 16 0
+sgw 0 ct7
+lll 20 0
+sgw 0 ct9
+llw 10 0
+sgw 0 ii0
+lll 12 0
+sgl 0 vdi2
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: vrt_cpyfm
+csv
+ldw 121 0
+sgw 0 ct0
+ldw 4 0
+sgw 0 ct1
+ldw 3 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+lll 12 0
+sgl 0 vdi2
+lll 24 0
+tda 0 0
+ldw 0 0
+adw 2 0
+lxw 0 0 0
+sgw 0 ii1
+lll 24 0
+tda 0 0
+ldw 1 0
+adw 2 0
+lxw 0 0 0
+sgw 0 ii2
+lll 16 0
+sgw 0 ct7
+lll 20 0
+sgw 0 ct9
+jsr vdi
+lag pi0 0
+tad 0 0
+sgl 0 vdi2
+ret
+efn 0
+: vr_trnfm
+csv
+ldw 110 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgw 0 ct7
+lll 14 0
+sgw 0 ct9
+jsr vdi
+ret
+efn 0
+: v_get_pixel
+csv
+ldw 105 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct2
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+jsr vdi
+lgw io0 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+lgw io1 0
+lll 18 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vsin_mode
+csv
+ldw 33 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+llw 12 0
+sgw 0 ii1
+jsr vdi
+ret
+efn 0
+: vrq_locator
+csv
+ldw 28 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+jsr vdi
+lgw po0 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+lgw po1 0
+lll 18 1
+tda 1 0
+sow 0 0 0
+lgw io0 0
+lll 22 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vsm_locator
+csv
+ldw 28 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 pi0
+llw 12 0
+sgw 0 pi1
+jsr vdi
+lgw po0 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+lgw po1 0
+lll 18 1
+tda 1 0
+sow 0 0 0
+lgw io0 0
+lll 22 1
+tda 1 0
+sow 0 0 0
+lgw ct2 0
+lgw ct4 1
+ldw 1 2
+obw 10 2 1
+obw 1 1 0
+ret
+ret
+efn 0
+: vrq_valuator
+csv
+ldw 29 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+lgw io0 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+lll 16 0
+tda 0 0
+low 0 0 0
+lgw io1 1
+obw 13 1 0
+ret
+efn 0
+: vsm_valuator
+csv
+ldw 29 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+lgw io0 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+lll 16 0
+tda 0 0
+low 0 0 0
+lgw io1 1
+obw 13 1 0
+lgw ct4 0
+lll 20 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vrq_choice
+csv
+ldw 30 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 1 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+lgw io0 0
+lll 12 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vsm_choice
+csv
+ldw 30 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+jsr vdi
+lgw io0 0
+lll 10 1
+tda 1 0
+sow 0 0 0
+lgw ct4 0
+ret
+ret
+efn 0
+: vrq_string
+csv
+ldw 31 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+llw 12 0
+sgw 0 ii1
+lll 14 0
+tda 0 0
+ldw 0 0
+adw 2 0
+lxw 0 0 0
+sgw 0 pi0
+lll 14 0
+tda 0 0
+ldw 1 0
+adw 2 0
+lxw 0 0 0
+sgw 0 pi1
+jsr vdi
+lag io0 0
+tad 0 0
+sll 0 -4
+* 0
+lll -4 0
+ill 1 -4
+tda 0 0
+lob 0 0 0
+lll 18 1
+ill 1 18
+tda 1 0
+sob 0 0 0
+tsb 0
+brc 4 1
+jmp 0
+* 1
+ret
+efn 4
+: vsm_string
+csv
+ldw 31 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+llw 12 0
+sgw 0 ii1
+lll 14 0
+tda 0 0
+ldw 0 0
+adw 2 0
+lxw 0 0 0
+sgw 0 pi0
+lll 14 0
+tda 0 0
+ldw 1 0
+adw 2 0
+lxw 0 0 0
+sgw 0 pi1
+jsr vdi
+lag io0 0
+tad 0 0
+sll 0 -4
+* 0
+lll -4 0
+ill 1 -4
+tda 0 0
+lob 0 0 0
+lll 18 1
+ill 1 18
+tda 1 0
+sob 0 0 0
+tsb 0
+brc 4 1
+jmp 0
+* 1
+lgw ct4 0
+ret
+ret
+efn 4
+: vsc_form
+csv
+ldw 111 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 37 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi1
+jsr vdi
+lag ii0 0
+tad 0 0
+sgl 0 vdi1
+ret
+efn 0
+: vex_timv
+csv
+ldw 118 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 0 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgw 0 ct7
+jsr vdi
+lgw ct9 0
+lll 14 1
+ill 2 14
+tda 1 0
+sow 0 0 0
+lgw ct10 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+lgw io0 0
+lll 18 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: v_show_cur
+csv
+ldw 122 0
+sgw 0 ct0
+ldw 1 0
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+jsr vdi
+ret
+efn 0
+: v_hide_c
+csv
+ldw 123 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+jsr vdi
+ret
+efn 0
+: vq_mouse
+csv
+ldw 124 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+jsr vdi
+lgw io0 0
+lll 10 1
+tda 1 0
+sow 0 0 0
+lgw po0 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+lgw po1 0
+lll 18 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vex_butv
+csv
+ldw 125 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgw 0 ct7
+jsr vdi
+lgw ct9 0
+lll 14 1
+ill 2 14
+tda 1 0
+sow 0 0 0
+lgw ct10 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vex_motv
+csv
+ldw 126 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgw 0 ct7
+jsr vdi
+lgw ct9 0
+lll 14 1
+ill 2 14
+tda 1 0
+sow 0 0 0
+lgw ct10 0
+lll 14 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vex_curv
+csv
+ldw 127 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgw 0 ct7
+jsr vdi
+lgw ct9 0
+lll 14 1
+ill 2 14
+tda 1 0
+sow 0 0 0
+lgw ct10 0
+lll 14 1
+ill 2 14
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vq_key_s
+csv
+ldw 128 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+jsr vdi
+lgw io0 0
+lll 10 1
+tda 1 0
+sow 0 0 0
+ret
+efn 0
+: vq_color
+csv
+ldw 26 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct1
+ldw 2 0
+sgw 0 ct3
+llw 8 0
+sgw 0 ct6
+llw 10 0
+sgw 0 ii0
+llw 12 0
+sgw 0 ii1
+lll 14 0
+sgl 0 vdi3
+jsr vdi
+lag io0 0
+tad 0 0
+sgl 0 vdi3
+ret
+efn 0
+: vql_attributes
+csv
+ldw 35 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi3
+jsr vdi
+lag io0 0
+tad 0 0
+sgl 0 vdi3
+lgw po0 0
+lll 10 1
+tda 1 0
+ldw 3 1
+adw 2 1
+sxw 0 1 0
+ret
+efn 0
+: vqm_attributes
+csv
+ldw 36 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi3
+jsr vdi
+lag io0 0
+tad 0 0
+sgl 0 vdi3
+lgw po1 0
+lll 10 1
+tda 1 0
+ldw 3 1
+adw 2 1
+sxw 0 1 0
+ret
+efn 0
+: vqf_attributes
+csv
+ldw 38 0
+sgw 0 ct0
+ldw 0 0
+sgw 0 ct3
+sgw 0 ct1
+llw 8 0
+sgw 0 ct6
+lll 10 0
+sgl 0 vdi3
+jsr vdi
+lag io0 0
+tad 0 0
+sgl 0 vdi3
+ret
+efn 0
+: vdi
+csv
+lag vdi0 0   tad 0 1   ldw 115 0   trp 2 
+ret
+efn 0

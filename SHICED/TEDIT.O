@@ -1,0 +1,105 @@
+00100                       .dc.b   0, 1, 0                 * func 019              
+ 197                               *                                                        Event Manager
+ 198 0000001E 000100                       .dc.b   0, 1, 0                 * func 020              
+ 199 00000021 030500                       .dc.b   3, 5, 0                 * func 021              
+ 200 00000024 050500                       .dc.b   5, 5, 0                 * func 022              
+ 201 00000027 00                                         Form Manager
+ 231 00000078 010101                       .dc.b   1, 1, 1                 * func 050              
+ 232 0000007B 090101                       .dc.b   9, 1, 1                 * func 051              
+ 233 0000007E 010101                       .dc.b   1, 1, 1                 * func 002              
+ 234 00000081 010100                       .dc.b   1, 1, 0                 * func 003              
+ 235 00000084 000501                       .dc.b   0, 5, 1                 * func 004              
+ 236 00000087 000000                       .dc.b   0, 0, 0                 * func 005              
+ 237 0000008A 000000                       .dc.b   0, 0, 0                 * func 006              
+ 238 0000008D 000000                       .dc.b   0, 0, 0                 * func 007              
+ 239 00000090 000000                       .dc.b   0, 0, 0                 * func 008              
+ 240 00000093 000000                       .dc.b   0, 0, 0                 * func 009              
+ 241                               *                                                        Dialog Manager
+ 242 00000096 000000                       .dc.b   0, 0, 0                 * func 060              
+ 243 00000099 000000                       .dc.b   0, 0, 0                 * func 061              
+ 244 0000009C 000000                       .dc.b   0, 0, 0                 * func 062              
+ 245 0000009F 000000                       .dc.b   0, 0, 0                 * func 003              
+ 246 000000A2 000000                       .dc.b   0, 0, 0                 * func 004              
+ 247 000000A5 000000                       .dc.b   0, 0, 0                 * func 005              
+ 248 000000A8 000000                       .dc.b   0, 0, 0                 * func 006              
+ 249 000000AB 000000                       .dc.b   0, 0, 0                 * func 007              
+ 250 000000AE 000000                       .dc.b   0, 0, 0                 * func 008              
+ 251 000000B1 000000                       .dc.b   0, 0, 0                 * func 009              
+ 252                               *                                                       Graphics Manager
+ 253 000000B4 040300                       .dc.b   4, 3, 0                 * func 070              
+ 254 000000B7 080300                       .dc.b   8, 3, 0                 * func 071              
+ 255 000000BA 060100                       .dc.b   6, 1, 0                 * func 072              
+ 256 000000BD 080100                       .dc.b   8, 1, 0                 * func 073              
+ 257 000000C0 080100                       .dc.b   8, 1, 0                 * func 074              
+ 258 000000C3 040101                       .dc.b   4, 1, 1                 * func 075              
+ 259 000000C6 030101                       .dc.b   3, 1, 1                 * func 076              
+ 260 000000C9 000500                       .dc.b   0, 5, 0                 * func 077              
+ 261 000000CC 010101                       .dc.b   1, 1, 1                 * func 078              
+ 262 000000CF 000500                       .dc.b   0, 5, 0                 * func 009              
+ 263                               *                                                       Scrap Manager
+ 264 000000D2 000101                       .dc.b   0, 1, 1                 * func 080              
+ 265 000000D5 000101                       .dc.b   0, 1, 1                 * func 081              
+ 266 000000D8 000000                       .dc.b   0, 0, 0                 * func 082              
+ 267 000000DB 000000                       .dc.b   0, 0, 0                 * func 083              
+ 268 000000DE 000000                       .dc.b   0, 0, 0                 * func 084              
+ 269 000000E1 000000                       .dc.b   0, 0, 0                 * func 005              
+ 270 000000E4 000000                       .dc.b   0, 0, 0                 * func 006              
+ 271 000000E7 000000                       .dc.b   0, 0, 0                 * func 007              
+ 272 000000EA 000000                       .dc.b   0, 0, 0                 * func 008              
+ 273 000000ED 000000                       .dc.b   0, 0, 0                 * func 009              
+ 274                               *                                                       fseler Manager
+ 275 000000F0 000202                       .dc.b   0, 2, 2                 * func 090              
+C P / M   6 8 0 0 0   A s s e m b l e r		Revision 04.03		Page   6
+Source File: B:TEDITST.S
+
+ 276 000000F3 000000                       .dc.b   0, 0, 0                 * func 091              
+ 277 000000F6 000000                       .dc.b   0, 0, 0                 * func 092              
+ 278 000000F9 000000                       .dc.b   0, 0, 0                 * func 003              
+ 279 000000FC 000000                       .dc.b   0, 0, 0                 * func 004              
+ 280 000000FF 000000                       .dc.b   0, 0, 0                 * func 005              
+ 281 00000102 000000                       .dc.b   0, 0, 0                 * func 006              
+ 282 00000105 000000                       .dc.b   0, 0, 0                 * func 007              
+ 283 00000108 000000                       .dc.b   0, 0, 0                 * func 008              
+ 284 0000010B 000000                       .dc.b   0, 0, 0                 * func 009              
+ 285                               *                                                       Window Manager
+ 286 0000010E 050100                       .dc.b   5, 1, 0                 * func 100              
+ 287 00000111 050100                       .dc.b   5, 1, 0                 * func 101              
+ 288 00000114 010100                       .dc.b   1, 1, 0                 * func 102              
+ 289 00000117 010100                       .dc.b   1, 1, 0                 * func 103              
+ 2
+st_spc(str_ptr)
+char	*str_ptr;
+{ 
+  int i;
+  i = 79;		/* start at end of line */
+
+  while ((i >= 0) && ((*(str_ptr+i) == ' ') || (*(str_ptr+i) == 0)))	
+   { i = i - 1;					/* beginning of line or */
+   }
+  last_len = i;				/* set length of string */
+  *(str_ptr+(i+1)) = 13;		/* put carrige return there */	
+}
+
+/****************************************************************/
+/*      ch_line checks line and sees if needs updating  	*/
+/****************************************************************/
+
+ch_line()
+{ 
+   st_spc(&templine);
+   del_line();
+   ins_line();
+}
+
+/****************************************************************/
+/*  del_line deletes the specified number of bytes from file	*/
+/****************************************************************/
+
+del_line()
+{
+  int i;
+  i = 0;				/* initialize i to start */
+  while (i < 81)			/* max-line = 80 */
+  {  if (file[currchar + i] == 13)	/* carrige return eol */
+     { if ((currchar + i) != lastchar)
+	{ del_byte(&f
